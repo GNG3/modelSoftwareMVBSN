@@ -1,0 +1,15 @@
+useDynLib(modelSoftwareMVBSN, .registration=TRUE)
+exportPattern("^[[:alpha:]]+")
+
+S3method(plot, modelSoftwareMVBSN)
+S3method(summary, modelSoftwareMVBSN)
+
+import(ggplot2)
+import(MASS)
+
+importFrom(coda, geweke.diag, effectiveSize)
+importFrom(Rcpp, evalCpp)
+importFrom(stats, sd, rnorm, model.matrix, model.response, quantile, acf, density, dist, rbinom)
+importFrom(graphics, abline, par, plot)
+importFrom(mvtnorm, rmvnorm)
+importFrom(MCMCpack, rinvgamma, riwish)

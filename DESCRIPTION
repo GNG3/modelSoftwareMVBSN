@@ -1,0 +1,14 @@
+Package: modelSoftwareMVBSN
+Type: Package
+Title: An R Package for Bayesian Social Network Modelling
+Version: 1.0
+Date: 2021-02-22
+Author: George Gerogiannis
+Maintainer: George Gerogiannis <g.gerogiannis.1@research.gla.ac.uk>
+Description: An R Package for Bayesian Social Network Modelling.
+License: GPL (>= 2) 
+Depends: MASS, MCMCpack
+Imports: Rcpp (>= 1.0.4), coda (>= 0.19-3), ggplot2, mvtnorm (>= 1.1-1)
+LinkingTo: Rcpp, RcppArmadillo, RcppProgress
+Suggests: 
+    testthat
